@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - landing  page final</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="div-header">
+  <header id="header">
+    <nav id="nav-bar">
+      <ul>
+        <li><a class="nav-link" href="#table-container">Stock</a></li>
+        <li><a class="nav-link" href="#hedgehog-info">Product Info</a></li>
+        <li><a class="nav-link" href="#div-header">Page Top</a></li>
+      </ul>
+    </nav>
+    <img src="https://i.postimg.cc/fTJm5Rc7/images2.png" id="header-img" alt="minimalist hedgehog company logo" />
+    <p id="prickle"> Prickle Pals </p>
+
+  </header>
+  <!-- empty div to enable margin-top media query usage on #banner image  -->
+  <div></div>
+  <div class="container banner-container">
+    <img class="img-fluid" style="width: 900px;" id="banner" src="https://cf.ltkcdn.net/small-pets/images/orig/271674-2000x1334-hand-holding-hedgehog.jpg" alt="a hand holding a balled up hedgehog">
+  </div>
+
+</div>
+<div class="form-container">
+  <p id="mailing">Sign up for our mailing list below! </p>
+  <form id="form" action="https://www.freecodecamp.com/email-submit">
+    <input name="email" id="email" type="email" placeholder="Enter your email address" required />
+    <input id="submit" type="submit" value="Subscribe" />
+
+  </form>
+</div>
+<section id="hedgehog-info">
+  <section class="video-zone">
+    <iframe id="video" title="Hedgehog Boat" src="https://www.youtube.com/embed/SoZiZE2Zcng" height="350" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" allow="autoplay *"></iframe>
+
+    <p class="info-text"> Our hedgehogs are 100% crafted by our local artisans. Each quill is perfectly put into place and we make sure that each hedgehog has at least 4000 quills. The hedgehogs we produce go through a rigorous inspection and must pass this test before being shipped out to you. Part of this testing program includes checking the buoyancy of the hoglet. All hoglets are fed 100% organic vegetables sourced locally by our professionally trained farmers. They also are fed oragnic farm fresh insects. Each hedgehog purchase includes a starter package, that includes: One (1) specialized feed bag, an owner instruction manual, and one (1) free random sweater and hat combination set for your prickle pal, when you sign up with our newsletter!
+    </p>
+  </section>
+</section>
+<section id="table-container">
+  <div class="table-item shipping">
+    <h2> Shipping </h2>
+    <p class="shipping-info table-text">
+      Enjoy high speed shipping across the globe! We pride ourselves in how fast our products go out. Since the nature of our business are live animals, we understand the importance of getting out little guys out to their new parents quickly.
+    </p>
+    <button class="button shipping-btn">Shipping Info</button>
+  </div>
+
+
+  <div class="table-item our-ranchers">
+    <h2> Our Ranchers </h2>
+    <p class="rancher-info table-text">
+      We have local ranchers and farmers contracted specially for our business. Our farmers grow everything they need in order to keep our hedgehogs nice and healthy. They are raised on an organic diet of fruits, vegetables and bugs, all sourced from our farmers. Click below to meet some of our ranchers and farmers!
+    </p>
+    <button class="button">Our Team</button>
+  </div>
+
+  <div class="table-item premium">
+    <h2> Premium Products </h2>
+    <p class="product-info table-text">
+      Enjoy our hedgehog speciality products which include live animal feed, organic speciality food pellets, formulated and balanced perfectly for your little friend, clothes, acessories, Quill Shine™ (comes in conditioner, shampoo, and oil) and more! Check out our shop by clicking below.
+    </p>
+    <button class="button">Shop Now</button>
+  </div>
+</section>
+<footer>
+  <ol>
+    <li><a href="#">Legal Stuff</a></li>
+    <li><a href="#">FAQ</a></li>
+    <li><a href="#">Contact</a></li>
+  </ol>
+      <span>Copyright 2022, Pickle Pals©</span>
+</footer>
+<!-- partial -->
+  
+</body>
+</html>

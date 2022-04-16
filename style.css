@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Cabin&family=Catamaran:wght@100&family=Fjalla+One&family=Hind:wght@300&family=Lato:wght@700&family=Noto+Sans&family=Roboto:wght@500&display=swap");
+
+/* to-do:  3 product tables, check media query for infotext scaling  */
+
+/*
+font-family: 'Cabin', sans-serif;
+font-family: 'Archivo Narrow', sans-serif;
+font-family: 'Catamaran', sans-serif;
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Hind', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Noto Sans', sans-serif; 
+font-family: 'Roboto', sans-serif; 
+*/
+
+header {
+  background-color: #D1F4F2;
+  width: 100%;
+  height: 140px;
+  margin-bottom: 100px;
+}
+
+#header-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 100px;
+  position: relative;
+  top: 10px;
+  margin-left: 8px;
+}
+
+#prickle {
+  position: relative;
+  top: -95px;
+  right: -135px;
+  font-family: Cabin, sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  color: #513668;
+  border: double 6px;
+  width: 270px;
+  border-radius: 5px;
+  border-color: #826786;
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 100%;
+}
+
+  .nav-link:hover {
+   color: #E0AE46;
+   
+  
+}
+
+nav > ul {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: #D1F4F2;
+}
+ul {
+  list-style-type: none;
+  position: fixed;
+  width: 100%;
+  background-color: gray;
+  
+}
+.nav-link {
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  color: #243399;
+}
+
+li {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* banner container to center #banner image allows it to work with our #banner media query positioning  */
+.banner-container{
+  display: flex;
+  justify-content: center;
+}
+#banner {
+  border: 3px solid #D1F4F2;
+  max-width: 100%;
+  height: auto;
+  
+}
+
+  body {
+  	background-color: #68AEA9;
+    
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#mailing {
+  text-align: center;
+  padding-top: 50px;
+  padding-right: 10px;
+  font-size: 25px;
+  font-family: "Archivo Narrow", sans-serif;
+}
+form {
+  text-align: center;
+  padding-bottom: 50px;
+}
+#email {
+  width: 280px;
+}
+
+#hedgehog-info {
+  
+  background: white;
+}
+
+.video-zone {
+  background: #68AEA9;
+  display: flex;
+  height: 500px;
+  justify-content: center;
+}
+
+.info-text {
+  width: 1000px;
+  background: white;
+  align-items: center;
+  display: flex;
+  max-height: 350px;
+  font-size: 20px;
+  flex-grow: 0.2;
+  padding: 10px;
+}
+
+#video {
+  max-width: 500px;
+  border: 5px solid white;
+}
+
+.video-zone > iframe {
+  max-width: 1200px;
+  width: 100%;
+}
+
+#table-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: -50px;
+  
+  
+}
+
+h2 {
+  background-color: #F5DC91;
+  padding: 15px 0;
+  width: 100%;
+  border-radius: 25px;
+  border: solid 3px #DA9E5D;
+  
+}
+
+.table-item {
+  display: flex;
+  flex-direction: column; 
+  text-align: center;
+  margin: 0 30px;
+  max-width: 100%;
+  width: 350px;
+  background: #D1F4F2;
+  border: solid 3px #7d94ba;
+  padding: 25px;
+  
+  
+}
+
+
+
+.button {
+  height: 40px;
+  font-size: 18px;
+  font-weight: 900;
+  border: 3px solid #DA9E5D;
+  border-radius: 3px;
+  background: #E3C76A;
+  cursor: pointer;
+  font-family: 'Catamaran', sans-serif;
+  width: 220px;
+  align-self: center;
+  
+}
+
+.button:hover {
+   background-color: #F0D379;
+  
+}
+.shipping-btn {
+  margin-top: 49px;
+}
+  
+footer {
+  margin-top: 30px;
+  background-color: #dfe0e0;
+  padding: 16px;
+  font-family: 'Catamaran', sans-serif;
+  
+}
+
+footer > ol {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  font-size: 18px;
+  
+}
+
+footer > ol > li {
+  padding: 0 15px;
+}
+
+footer > span {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 15px;
+  font-size: 15px;
+  color: #444;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 850px) {
+  #video {
+    min-height: 300px;
+  }
+}
+/* max width of nav bar (text) media query changes with scaling*/
+@media (max-width: 865px) {
+  nav {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 865px) {
+  nav > ul {
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 865px) {
+  nav {
+    position: fixed;
+    top: 100px;
+    line-height: 25px;
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 865px) {
+  header {
+    position: fixed;
+    
+  }
+}
+
+@media (max-width: 865px) {
+  #banner {
+    margin-top: 300px;
+  }
+}
+
+
+@media (max-width: 967px) {
+  #table-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -100px;
+    
+  }
+}
+
+
+
+
+@media (max-width: 865px) {
+  .table-item {
+    margin-top: 20px;
+    
+  }
+}
+
+@media (max-width: 967px) {
+  .table-item {
+    margin-top: 20px;
+    
+  }
+}
+
+
+@media only screen and (max-width: 1100px) {
+  .info-text {
+    font-size: 18px;
+    justify-content: flex-start;
+  }
+}
+
+@media only screen and (max-width: 902px) {
+  .video-zone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 650px;
+    margin-bottom: 100px;
+  }
+}
+
+@media only screen and (max-width: 955px) {
+  .info-text {
+    font-size: 16px;
+    width: 500px;
+    height: 500px;
+  }
+}
