@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Cabin&family=Catamaran:wght@100&family=Fjalla+One&family=Hind:wght@300&family=Lato:wght@700&family=Noto+Sans&family=Roboto:wght@500&display=swap");
 
-/* to-do:  320px. fix table-item columning at 967px, it isn't respecting margin-top   */
+/* to-do:  fix 373 responsiveness in media query (321-384) 320px. fix table-item columning at 967px, it isn't respecting margin-top   */
 
 /*
 font-family: 'Cabin', sans-serif;
@@ -228,96 +228,7 @@ footer > span {
   font-family: "Noto Sans", sans-serif;
 }
 
-/*
-@media only screen and (max-width: 850px) {
-  #video {
-    min-height: 300px; */
 
-/* max width of nav bar (text) media query changes with scaling*/
-/*
-@media (max-width: 865px) {
-  nav {
-    flex-direction: column-reverse;
-    align-items: center;
-    text-align: center;
-  }
-}
-
-@media (max-width: 865px) {
-  nav > ul {
-    flex-direction: column-reverse;
-  }
-}
-
-@media (max-width: 865px) {
-  nav {
-    position: fixed;
-    top: 100px;
-    line-height: 25px;
-    padding-top: 10px;
-  }
-}
-
-@media (max-width: 865px) {
-  header {
-    position: fixed;
-    
-  }
-}
-
-@media (max-width: 865px) {
-  #banner {
-    margin-top: 300px;
-  }
-}
-
-*/
-
-/*
-
-
-
-@media (max-width: 865px) {
-  .table-item {
-    margin-top: 20px;
-    
-  }
-}
-
-@media (max-width: 967px) {
-  .table-item {
-    margin-top: 20px;
-    
-  }
-}
-
-
-@media only screen and (max-width: 1100px) {
-  .info-text {
-    font-size: 18px;
-    justify-content: flex-start;
-  }
-}
-
-@media only screen and (max-width: 902px) {
-  .video-zone {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 650px;
-    margin-bottom: 100px;
-  }
-} 
-
-@media only screen and (max-width: 955px) {
-  .info-text {
-    font-size: 16px;
-    width: 500px;
-    height: 500px;
-  }
-}
-
-*/
 /* for some reason syntax MUST be @media (max-width) if using only screen AND it will not work. Spaghetti! */
 
 @media (max-width: 320px) {
@@ -371,7 +282,6 @@ footer > span {
 }
 
 
-
 @media only screen and (min-width: 321px) and (max-width: 384px) {
   
   nav {
@@ -379,12 +289,29 @@ footer > span {
 }
   
   #prickle {
-    font-size: 30px;
-    width: 172px;
-    top: -93px;
-      
-      
+    font-size: 28px;
+    width: 163px;
+    top: -78px;
+  }      
+    #video {
+     min-height: 240px;
+     max-width: 305px;
+  
 }
+  
+  .video-zone {
+    margin-top: 120px;
+    max-height: 1500px;
+        
+}
+  .info-text {
+    max-width: 305px;
+    max-height: 1200px;
+}
+  
+  #table-container {
+    margin-top: 115px;
+  }
 }
 
 /*samsung* and 400px responsive*/
@@ -411,7 +338,7 @@ footer > span {
       
       #prickle {
         font-size: 30px;
-        margin-top: 20px;
+        margin-top: 13px;
         width: 179px;
 }
       #form {
@@ -430,9 +357,11 @@ footer > span {
 }
       #video {
         min-height: 250px;
+        max-width: 363px;
+        
       } 
       .info-text {
-    max-width: 384px;
+    max-width: 363px;
     padding: 10px 20px 10px 20px;
     margin-bottom: 20px;
     max-height: 1500px;
@@ -484,10 +413,11 @@ footer > span {
       
       #video {
       min-height: 250px;
+      max-width: 360px;
 }
       
        .info-text {
-    max-width: 390px;
+    max-width: 360px;
     padding: 10px 20px 10px 20px;
     margin-bottom: 10px;
     max-height: 1500px;
@@ -497,7 +427,7 @@ footer > span {
        color: black;
 }
       .video-zone {
-       margin-top: -20px;
+       margin-top: 50px;
        height: 500px;
        max-width: 390px;
       }
@@ -552,12 +482,12 @@ footer > span {
       
     #video {
       min-height: 255px;
-      width: 412px;
+      max-width: 380px;
 
 }
     
       .info-text {
-       max-width: 412px;
+       max-width: 380px;
        padding: 10px 20px 10px 20px;
        margin-bottom: 10px;
        max-height: 520px;
@@ -629,58 +559,5 @@ footer > span {
       
 }   
 
-/*galaxy s20 NOT WORKING!!
-@media only screen 
-   and (min-width: 360px) 
-   and (max-width: 767px) {
-      
-      header {
-        position: static;
-        z-index: 9999;
-        
-      }
-      
-      nav {
-      position: flex;
-      display: none; 
-      
-      }
-      
-      #banner{
-      margin-top: -50px;
-}
-      
-      #prickle {
-        font-size: 3px;
-        margin-top: 13px;
-        width: 172px;
-}
-      
-      #submit {
-        margin-top: 12px;
-
-}
-      
-      .info-text {
-    width: 400px;
-    padding: 10px 15px 10px 15px;
-    margin-bottom: 10px;
-    max-height: 520px;
-    font-size: 10px;
-      }
-      
-      .button {
-       color: black;
-}
-      .video-zone {
-       margin-top: 60px;
-       height: 500px;
-      }
-     
-      #table-container {
-        margin-top: 10px;
-      }
    
-      }   
-
-*/
+      }
